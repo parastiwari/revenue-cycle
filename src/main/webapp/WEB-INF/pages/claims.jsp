@@ -31,8 +31,9 @@
 </head>
 <body>
 <%--<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">--%>
-<div class="container" style="margin-top: 30px;">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+<div class="container" style="margin-top: 90px;">
+    <%--<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >--%>
+    <div class="navbar navbar-fixed-top navbar-default" role="navigation" >
         <div class="navbar-header">
             <div class="container" style="margin-top: 10px;margin-bottom: 10px">
                 <ul class="nav nav-pills">
@@ -46,26 +47,130 @@
         </div>
     </div>
 
-    <div class="well" style="margin-top:50px; height: 130px">
-        <h4>Load Claims</h4>
-        <div style="float: left;margin-top: 7px;margin-left:50px;">
-            <h5>Select a Claim 837 File:</h5>
-            <a href="#">Load Multiple</a>
-            <%--<button type="button" class="btn btn-info">Load Multiple Claim Files</button>--%>
-        </div>
-        <form class="navbar-form navbar-left" role="" style="float:left;">
-            <div class="form-group">
-                <input type="file" class="form-control" placeholder="file">
+    <div class="panel panel-default">
+    <!-- Default panel contents -->
+        <div class="panel-heading" style="zzheight: 80px;">
+            <h4>Claim Files</h4>
+            <div style="float: left;margin-top: 7px;margin-left:50px;">
+                <h5>Select a Claim 837 File:</h5>
+                <a href="#">Load Multiple</a>
+                <%--<button type="button" class="btn btn-info">Load Multiple Claim Files</button>--%>
             </div>
-            <button type="submit" class="btn btn-info" onclick="alert('Loaded your file dude...not.');">Load File</button>
-        </form>
-    </div>
+            <form class="navbar-form navbar-left" role="" style="float:left;">
+                <div class="form-group">
+                    <input type="file" class="form-control" placeholder="file">
+                </div>
+                <button type="submit" class="btn btn-info" onclick="alert('Loaded your file dude...not.');">Load File</button>
+            </form>
+            <div style="clear: both"></div>
+        </div>
+        <div class="panel-body">
+            <div style="margin-left: 20px;">
+                <button type="button"  onclick="$('#divFiles').toggle();" class="btn btn-default navbar-btn">Show Files</button>
+            </div>
+            <div id="divFiles" style="display: none; height:400px; overflow: auto;">
+                <div>
+                    <h4>Claim Files Loaded</h4>
+                </div>
+                <!-- Table -->
+                <table class="table">
+                    <tr>
+                        <th>Date Uploaded</th>
+                        <th>Batch ID</th>
+                        <th>File Name</th>
+                        <th>Envelope</th>
+                        <th>Details</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 1, 2014</td>
+                        <td>000342</td>
+                        <td>claimfile1.837.edi</td>
+                        <td>Professional 837 Claim</td>
+                        <td>a bunch of unknown envelope details</td>
+                        <td>Acknowleged</td>
+                    </tr>
+                </table>
 
-    <!-- Example row of columns -->
+            </div>
+        </div>
+    </div>
     <div style="margin-top: 0px;margin-bottom: 0px; ">
         <div class="panel panel-default">
             <!-- Default panel contents -->
-            <div class="panel-heading">
+            <div class="panel-heading" style="height: 80px;">
                 <h4>Claims</h4>
                 <div style="margin-left:50px;float:left;">
                     <a href="#">All</a>
@@ -81,125 +186,90 @@
                 </div>
             </div>
             <div class="panel-body">
-            </div>
+                <div style="margin-left: 20px;">
+                    <button type="button"  onclick="$('#divClaims').toggle();" class="btn btn-default navbar-btn">Show Claims</button>
+                </div>
+                <br/>
+                <div id="divClaims" style="display: none; height:400px; overflow: auto;">
+                    <div>
+                        <h4>Claims</h4>
+                    </div>
+                    <!-- Table -->
+                    <table class="table">
+                        <tr>
+                            <th>field 1</th>
+                            <th>field 2</th>
+                            <th>field 3</th>
+                        </tr>
+                        <tr>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                        </tr>
+                        <tr>
+                            <th>field 1</th>
+                            <th>field 2</th>
+                            <th>field 3</th>
+                        </tr>
+                        <tr>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                        </tr>
+                        <tr>
+                            <th>field 1</th>
+                            <th>field 2</th>
+                            <th>field 3</th>
+                        </tr>
+                        <tr>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                        </tr>
+                        <tr>
+                            <th>field 1</th>
+                            <th>field 2</th>
+                            <th>field 3</th>
+                        </tr>
+                        <tr>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                        </tr>
+                        <tr>
+                            <th>field 1</th>
+                            <th>field 2</th>
+                            <th>field 3</th>
+                        </tr>
+                        <tr>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                        </tr>
+                        <tr>
+                            <th>field 1</th>
+                            <th>field 2</th>
+                            <th>field 3</th>
+                        </tr>
+                        <tr>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                        </tr>
+                        <tr>
+                            <th>field 1</th>
+                            <th>field 2</th>
+                            <th>field 3</th>
+                        </tr>
+                        <tr>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                        </tr>
+                    </table>
 
-            <!-- Table -->
-            <table class="table">
-                <tr>
-                    <th>Date Uploaded</th>
-                    <th>File Name</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Rejected</td>
-                </tr>
-                <tr>
-                    <td>Jan 1, 2014</td>
-                    <td>claimfile1.837.edi</td>
-                    <td>Professional 837 Claim</td>
-                    <td>Approved</td>
-                </tr>
-            </table>
+                </div>
+            </div>
         </div>
 
 
